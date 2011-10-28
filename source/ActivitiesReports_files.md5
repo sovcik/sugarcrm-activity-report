@@ -4,9 +4,9 @@ $md5_string = array (
   './LICENSE.txt' => 'ede0821c55505d1c68616dc37b522a66',
   './en_us.activities_reports.php' => '1674f72c250fcd0a02b4f08e40d5fec3',
   './ActivitiesReports.tpl' => '0353a127bcbcf5d5879ec916034dbe34',
-  './new_activities_menu.ext.php' => '888db63fc870187fab74c0336ddbc96b',
-  './ActivitiesReports.php' => '199a012079031b47a8a30ddae8dcd88e',
-  './manifest.php' => '664607c31861e18928e21dcc0d4b3a4d',
+  './new_activities_menu.ext.php' => '215bc1e0cb241b3372cb86b11d8d28e3',
+  './ActivitiesReports.php' => '7c9b934e66d2d02ed1ff8716a411c8e0',
+  './manifest.php' => '7d4fadd9beb5d1318fbbcedaa75aad90',
   './activitiesReports.js' => '46a32c18f8c0f67be498c98c96a7af0f',
 );
 ?>
