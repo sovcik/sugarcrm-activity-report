@@ -65,7 +65,7 @@ if (!isset($_REQUEST['export_report']) || $_REQUEST['export_report'] != '1') {
   if (isset($_REQUEST['parent_type']))
     $sugar_smarty->assign('PARENT_TYPE', $_REQUEST['parent_type']);
   else
-    $sugar_smarty->assign('PARENT_TYPE', 'Accounts');
+    $sugar_smarty->assign('PARENT_TYPE', 'User');
 
   if (isset($_REQUEST['object_name']))
     $sugar_smarty->assign('object_name', $_REQUEST['object_name']);
@@ -75,7 +75,7 @@ if (!isset($_REQUEST['export_report']) || $_REQUEST['export_report'] != '1') {
   if (isset($_REQUEST['parent_id']))
     $sugar_smarty->assign('object_id', $_REQUEST['parent_id']);
   else
-    $sugar_smarty->assign('object_id', '');
+    $sugar_smarty->assign('object_id', $current_user->id);
 
   if (isset($_REQUEST['date_start']))
     $sugar_smarty->assign('DATE_START', $_REQUEST['date_start']);
@@ -89,7 +89,7 @@ if (!isset($_REQUEST['export_report']) || $_REQUEST['export_report'] != '1') {
   $sugar_smarty->assign("CALENDAR_DATEFORMAT", $timedate->get_cal_date_format());
   $sugar_smarty->assign("DATE_FORMAT", $current_user->getPreference('datef'));
   $sugar_smarty->assign("CURRENT_USER", $current_user->id);
-  $firstModule = array_keys($parent_types);
+  $firstModule = array_keys($parent_types,'User');
   $sugar_smarty->assign("quicksearch_js", js_setup($firstModule[0]));
 }
 
