@@ -3,7 +3,7 @@ $manifest = array(
 
 	'acceptable_sugar_versions' => array (
 		'regex_matches' => array (
-			0 => "5\.*\.*",
+			0 => "6\.*\.*",
 		),
 	),
 	'acceptable_sugar_flavors' => array (
@@ -14,8 +14,8 @@ $manifest = array(
 	'name' 				=> 'Activities Reports',
 	'description' 		=> 'Activities Reports',
 	'author' 			=> 'SugarCRM.',
-	'published_date'	=> '2009-12-2',
-	'version' 			=> '1.0',
+	'published_date'	=> '2011-10-28',
+	'version' 			=> '1.1',
 	'type' 				=> 'module',
 	'icon' 				=> '',
 	'is_uninstallable' => true,

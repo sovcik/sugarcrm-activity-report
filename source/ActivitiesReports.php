@@ -257,7 +257,7 @@ if ((isset($_REQUEST['run_report']) && $_REQUEST['run_report'] == '1') ||
     }
 }
 $sugar_smarty->assign('count',count($activities));
-$sugar_smarty->assign('Activities',$activities);
-echo $sugar_smarty->fetch('modules/Activities/ActivitiesReports.tpl');
+$sugar_smarty->assign('Calendar',$activities);
+echo $sugar_smarty->fetch('modules/Calendar/ActivitiesReports.tpl');
 
 ?>
